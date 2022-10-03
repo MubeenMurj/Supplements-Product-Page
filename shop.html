@@ -1,0 +1,633 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shop page</title>
+
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+    crossorigin="anonymous"></script>
+
+  <!-- font-awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+    integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- owl carousel theme.css link -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+  <!-- owl carousel js file -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+  <!-- own CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <section class="container-fluid product-sale py-5">
+    <div class="container">
+      <h1 class="product-title product-mobile-title my-5 d-block d-lg-none text-center">Supplements</h1>
+      <div class="row">
+        <div class="col-md-6">
+          <div class="product-media">
+            <div class="product-media-container">
+              <div class="images-carousel owl-carousel owl-theme">
+                <div class="item">
+                  <img src="images/pro-img-1.png" alt="">
+                </div>
+                <div class="item">
+                  <img src="images/pro-img-1.png" alt="">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="product-meta">
+            <h1 class="product-title my-4 d-lg-block d-none">Supplements</h1>
+            <div class="product-description d-lg-block d-none">
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Excepturi corporis neque accusantium magni
+                error, mollitia veritatis? Iste, quod voluptate. Excepturi autem culpa maiores id, repudiandae in. Odit,
+                sequi quis! Quia! Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea dicta ex perferendis ipsa
+                temporibus cumque amet officia molestias porro laborum nisi cum alias placeat, pariatur sequi optio,
+                molestiae, eveniet voluptates?
+              </p>
+              <a href="javascript:void(0)">Read More</a>
+            </div>
+          </div>
+          <div class="product-form py-4">
+            <p class="product-price d-lg-none d-block">$48.00</p>
+            <form>
+              <div class="row mb-4">
+                <div class="col-lg-auto pb-3 pb-lx-0">
+                  <div class="radio-button">
+                    <input type="radio" name="purchase" id="purchase-1" checked>
+                    <label for="purchase-1">One-time Buy</label>
+                  </div>
+                </div>
+                <div class="col-lg-auto">
+                  <div class="radio-button">
+                    <input type="radio" name="purchase" id="purchase-2">
+                    <label for="purchase-2">Subscribe & Save 10% Off</label>
+                  </div>
+                </div>
+              </div>
+              <div class="row mb-lg-4 mb-2">
+                <div class="col-lg-auto pb-2 pb-lg-0">
+                  <label for="time"><strong>Ships Every:</strong></label>
+                </div>
+                <div class="col-lg-auto">
+                  <select class="w-100 p-3 p-sm-2">
+                    <option value="">1 Month Recommended</option>
+                    <option value="">2 Month</option>
+                    <option value="">3 Month</option>
+                  </select>
+                </div>
+              </div>
+              <div class="row mb-4 pt-3">
+                <div class="col-lg-auto">
+                  <p class="product-price d-lg-block d-none">$48.00</p>
+                </div>
+                <div class="col-lg-auto product-amount pb-3 pb-lg-0">
+                  <div class="input-group">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn minus" data-type="minus">
+                        <span class="fa fa-minus"></span>
+                      </button>
+                    </span>
+                    <input type="text" name="" class="form-control input-number" value="10" min="1" max="100">
+                    <span class="input-group-btn">
+                      <button type="button" class="btn plus" data-type="plus">
+                        <span class="fa fa-plus"></span>
+                      </button>
+                    </span>
+                  </div>
+                </div>
+                <div class="col-lg-auto">
+                  <button type="submit" class="btn add-to-cart w-100"><span class="fa fa-cart-shopping"></span> Add to Cart</button>
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+      <div class="product-description d-block d-lg-none text-center my-5">
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum alias mollitia soluta impedit corrupti
+          molestiae eos, facere at excepturi odit laudantium inventore, quaerat numquam sit? Inventore voluptatibus eum
+          porro numquam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor sit ex veritatis est aliquam
+          quis eligendi nam facere omnis, officiis culpa nemo harum impedit dignissimos excepturi vel debitis atque
+          iure?
+        </p>
+        <a href="javascript:void(0)">Read More</a>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container-fluid py-0 py-sm-5 advantages-box bg-brown-light">
+    <div class="accordion accordion-flush">
+      <div class="accordion-item section-accordion">
+        <h2 class="accordion-header d-block d-sm-none" id="benefits-section">
+          <button class="accordion-button border-3 border-top border-dark collapsed py-5 px-0" type="button"
+            data-bs-toggle="collapse" data-bs-target="#benefits-section-accordion" aria-expanded="false"
+            aria-controls="benefits-section-accordion">
+            Benefits
+          </button>
+        </h2>
+        <div id="benefits-section-accordion" class="accordion-collapse collapse" aria-labelledby="benefits-section"
+          data-bs-parent="">
+          <div class="accordion-body p-0">
+            <div class="container py-0 py-sm-5">
+              <div class="row">
+                <div class="col-lg-6">
+                  <div class="px-0 px-sm-0 px-xxl-5 mx-0 mx-sm-0 mx-md-5 title-box">
+                    <h2
+                      class="mb-2 text-start text-sm-center text-md-center text-lg-start order-0 order-sm-1 order-md-1 order-lg-0 pt-0 pt-sm-5 py-5 py-lg-0">
+                      Grass Fed Beef Supplements Support...
+                    </h2>
+                    <img class="img-fluid order-1 order-sm-0 order-md-0 order-lg-1" src="images/sec2-img.png" alt="">
+                  </div>
+                </div>
+                <div class="col-lg-6">
+                  <div class="px-0 px-sm-3 px-md-5">
+                    <ul class="mb-4 mt-4 list-dotted">
+                      <div class="dash"></div>
+                      <li>Superior Quality Beef Organ Supplements</li>
+                      <li>From Pasture Raised Grass-fed Beef</li>
+                      <li>Exclusively from New Zealand &amp; Australia</li>
+                      <li>Hormone, Pesticide &amp; GMO Free</li>
+                      <li>100% Freeze Dried &amp; Non-Defatted</li>
+                      <li>Third Party Tested For Purity</li>
+                      <li class="brown">No One has Higher Quality Standards</li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container-fluid sec3 position-relative bg-brown-light">
+    <div class="accordion accordion-flush">
+      <div class="accordion-item section-accordion">
+        <h2 class="accordion-header d-block d-sm-none" id="nutrition-section">
+          <button class="accordion-button border-3 border-top border-dark collapsed py-5 px-0" type="button"
+            data-bs-toggle="collapse" data-bs-target="#nutrition-section-accordion" aria-expanded="false"
+            aria-controls="nutrition-section-accordion">
+            Nutrition
+          </button>
+        </h2>
+        <div id="nutrition-section-accordion" class="accordion-collapse collapse" aria-labelledby="nutrition-section"
+          data-bs-parent="">
+          <div class="accordion-body p-0">
+            <div class="row">
+              <div class="col-12 d-sm-none px-0 pb-3">
+                <img src="images/cow-in-countryside.jpg" alt="" srcset="" class="img-fluid">
+              </div>
+              <div class="col-lg-5 offset-lg-2" style="z-index: 2;">
+                <div class="content-box p-3 p-sm-5 mx-0 mx-sm-4 mx-md-5 mx-lg-2">
+                  <h2>Grass Fed Beef Supplements (Liver, Heart, Kidney, Pancreas, Spleen) are High In ...</h2>
+                  <ul class="mb-4 mt-4 list-dotted">
+                    <div class="dash"></div>
+                    <li>Preformed Vitamin A (aka retinol)</li>
+                    <li>Vitamin B12</li>
+                    <li>Coenzyme Q10 (also known as CoQ10)</li>
+                    <li>Bio-Available Heme Iron</li>
+                    <li>Selenium</li>
+                    <li>Enzymes</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="bg-box mx-lg-5 d-none d-sm-block"></div>
+  </section>
+
+
+  <section class="container-fluid py-0 py-sm-5 sec4 bg-brown-light">
+    <div class="accordion accordion-flush">
+      <div class="accordion-item section-accordion">
+        <h2 class="accordion-header d-block d-sm-none" id="details-section">
+          <button class="accordion-button border-3 border-top border-dark collapsed py-5 px-0" type="button"
+            data-bs-toggle="collapse" data-bs-target="#details-section-accordion" aria-expanded="false"
+            aria-controls="details-section-accordion">
+            Details
+          </button>
+        </h2>
+        <div id="details-section-accordion" class="accordion-collapse collapse" aria-labelledby="details-section"
+          data-bs-parent="">
+          <div class="accordion-body p-0">
+            <div class="container-lg py-5">
+              <div class="row">
+                <div class="col-md-6">
+                  <div class="m-lg-5 p-lg-5 align-items-center d-flex h-100 justify-content-center"
+                    style="margin-right: 0 !important;">
+                    <img src="images/sec4-img.png" alt="" class="img-fluid">
+                  </div>
+                </div>
+                <div class="col-md-6">
+                  <div class="content-box">
+                    <h2>Grass Fed<br>Beef Supplements</h2>
+                    <ul class="mb-4 mt-4 list-dotted">
+                      <div class="dash"></div>
+                      <li>Pasture Raised in New Zealand & Australia</li>
+                      <li>Grass Fed & Grass-Finished</li>
+                      <li>Hormone, Pesticide & GMO-Free</li>
+                      <li>Absolutely No Fillers (or) Flow Agents</li>
+                      <li>100% Freeze Dried & Non-Defatted</li>
+                      <li>Third-Party Tested for Purity</li>
+                      <li>Allergen Free</li>
+                    </ul>
+                    <p class="d-none d-lg-block">To learn more about ancient wisdom about eating supplements, visit our
+                      page
+                      dedicated to all things <a href="#"><strong>Grass Fed Beef Supplements-related</strong></a></p>
+                  </div>
+                </div>
+              </div>
+              <p class="d-block d-lg-none text-center">To learn more about ancient wisdom about eating supplements,
+                visit our
+                page dedicated to all things <a href="#"><strong>Grass Fed Beef Supplements-related</strong></a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <section class="container-fluid sec5 py-0 py-sm-5 bg-brown-medium">
+    <div class="accordion accordion-flush">
+      <div class="accordion-item section-accordion">
+        <h2 class="accordion-header d-block d-sm-none" id="nourishment-section">
+          <button class="accordion-button border-3 border-top border-dark collapsed py-5 px-0" type="button"
+            data-bs-toggle="collapse" data-bs-target="#nourishment-section-accordion" aria-expanded="false"
+            aria-controls="nourishment-section-accordion">
+            Nourishment
+          </button>
+        </h2>
+        <div id="nourishment-section-accordion" class="accordion-collapse collapse"
+          aria-labelledby="nourishment-section" data-bs-parent="">
+          <div class="accordion-body p-0">
+            <div class="container-lg">
+              <p class="text-center caption my-4">Founder and Leader of the Organ Supplement Movement</p>
+              <div class="py-0 py-md-4">
+                <div class="row">
+                  <div class="col-lg-5">
+                    <div class="content-box py-2 px-4">
+                      <h2 class="mb-3 text-lg-start text-center">Nourishment</h2>
+                      <p class="mb-4 pb-1 text-lg-start text-center"><strong>Nourish Your Way To Health & Happiness With
+                          Grass Fed Beef Supplements</strong>
+                      </p>
+                      <p class="text-lg-start text-center">For most of human history, we effortlessly consumed
+                        (like-supports-like nutrition ) the things we needed for strength, health, and happiness. Like
+                        the fertile ground that we once walked upon, we were a natural extension of this earth. In the
+                        modern world, we unknowingly struggle to fulfill our nutritional needs in order to support and
+                        sustain a vibrant, disease-free life. We are now part of a world where our strength, our health,
+                        and our happiness are not fully ours anymore... but it doesn't have to be that way!</p>
+                    </div>
+                  </div>
+                  <div class="col-lg-7">
+                    <div class="accordion accordion-flush px-lg-5 nourishment-accordion" id="sec5-accordion">
+                      <!-- accordion start -->
+                      <div
+                        class="accordion-item-container py-2 px-0 px-sm-3 px-md-5 mb-4 d-flex flex-column flex-sm-row gap-1 align-items-center align-items-sm-start text-center text-sm-start">
+                        <div class="my-2">
+                          <img src="images/sec5-icon-1.png">
+                        </div>
+                        <div class="accordion-item w-100">
+                          <button class="accordion-button pb-1" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#sec5-acord-1" aria-expanded="true" aria-controls="sec5-acord-1">
+                            <h3 class="accordion-header text-center text-sm-start w-100" id="acord-heading1">
+                              New Zealand & Australia
+                            </h3>
+                          </button>
+                          <div id="sec5-acord-1" class="accordion-collapse collapse show"
+                            aria-labelledby="acord-heading1" data-bs-parent="#sec5-accordion">
+                            <div class="accordion-body py-2">
+                              <p>Our product is 100% sourced in New Zealand & Australia. In agricultural circles and
+                                fisheries, it's known that the clean air and water, green pastures, and animal husbandry
+                                is at a higher level.</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- accordion end -->
+                      <!-- accordion start -->
+                      <div
+                        class="accordion-item-container py-2 px-0 px-sm-3 px-md-5 mb-4 d-flex flex-column flex-sm-row gap-1 align-items-center align-items-sm-start text-center text-sm-start">
+                        <div class="my-2">
+                          <img src="images/sec5-icon-2.png">
+                        </div>
+                        <div class="accordion-item">
+                          <button class="accordion-button pb-1 collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#sec5-acord-2" aria-expanded="false" aria-controls="sec5-acord-2">
+                            <h3 class="accordion-header text-center text-sm-start w-100" id="acord-heading2">
+                              Ultra-Pure
+                            </h3>
+                          </button>
+                          <div id="sec5-acord-2" class="accordion-collapse collapse" aria-labelledby="acord-heading2"
+                            data-bs-parent="#sec5-accordion">
+                            <div class="accordion-body py-2">
+                              <p>Our product is 100% pure... This means that you won't see any of the extra stuff that
+                                most supplement companies include to save time and money (stearates, silica, etc.)
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- accordion end -->
+                      <!-- accordion start -->
+                      <div
+                        class="accordion-item-container py-2 px-0 px-sm-3 px-md-5 mb-4 d-flex flex-column flex-sm-row gap-1 align-items-center align-items-sm-start text-center text-sm-start">
+                        <div class="my-2">
+                          <img src="images/sec5-icon-3.png">
+                        </div>
+                        <div class="accordion-item">
+                          <button class="accordion-button pb-1 collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#sec5-acord-3" aria-expanded="true" aria-controls="sec5-acord-3">
+                            <h3 class="accordion-header text-center text-sm-start w-100" id="acord-heading3">
+                              Freeze Dried
+                            </h3>
+                          </button>
+                          <div id="sec5-acord-3" class="accordion-collapse collapse" aria-labelledby="acord-heading3"
+                            data-bs-parent="#sec5-accordion">
+                            <div class="accordion-body py-2">
+                              <p>Our product is 100% freeze-dried in contrast to the heat-processed varieties. This
+                                means that you get more of the heat-sensitive vitamins, minerals , and co-factors that
+                                make organ meats so incredibly nourishing</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- accordion end -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="container-fluid sec6 bg-brown-medium px-0">
+    <div class="container-lg py-5 px-0">
+      <h2 class="text-center title my-3 my-md-4 my-lg-5 px-2 px-sm-0">Additional Product Information</h2>
+
+      <div class="container-lg pt-3 px-0">
+        <ul class="nav nav-pills mb-0 overflow-auto flex-nowrap justify-content-start justify-content-md-center gap-1"
+          id="pills-tab" role="tablist">
+          <li class="nav-item px-1" role="presentation">
+            <button class="nav-link py-2 px-5 active" id="pills-nourish-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-nourish" type="button" role="tab" aria-controls="pills-nourish"
+              aria-selected="true">Nourish</button>
+          </li>
+          <li class="nav-item px-1" role="presentation">
+            <button class="nav-link py-2 px-5" id="pills-benefits-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-benefits" type="button" role="tab" aria-controls="pills-benefits"
+              aria-selected="false">Benefits</button>
+          </li>
+          <li class="nav-item px-1" role="presentation">
+            <button class="nav-link py-2 px-5" id="pills-nutrition-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-nutrition" type="button" role="tab" aria-controls="pills-nutrition"
+              aria-selected="false">Nutrition</button>
+          </li>
+          <li class="nav-item px-1" role="presentation">
+            <button class="nav-link py-2 px-5" id="pills-deepdrive-tab" data-bs-toggle="pill"
+              data-bs-target="#pills-deepdrive" type="button" role="tab" aria-controls="pills-deepdrive"
+              aria-selected="false">Deep Dive</button>
+          </li>
+        </ul>
+
+        <div class="tab-content px-3" id="pills-tabContent">
+          <!-- tab item -->
+          <div class="tab-pane fade show active" id="pills-nourish" role="tabpanel" aria-labelledby="pills-nourish-tab">
+            <div class="accordion accordion-flush py-5 px-lg-5" id="sec6-nourish-accordion">
+              <!-- accordion item -->
+              <div class="accordion-item-container py-2 px-0 px-sm-2 px-md-3 px-lg-5 mb-4">
+                <div class="accordion-item">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sec6-nourish-acord-1" aria-expanded="true" aria-controls="sec6-nourish-acord-1">
+                    <h3 class="accordion-header" id="nourish-acord-heading1">
+                      Benefits of Eating Beef Supplements (Liver, Heart, Kidney, Pancreas & Spleen)
+                    </h3>
+                  </button>
+                  <div id="sec6-nourish-acord-1" class="accordion-collapse collapse show"
+                    aria-labelledby="nourish-acord-heading1" data-bs-parent="#sec6-nourish-accordion">
+                    <div class="accordion-body py-2">
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti alias itaque iusto possimus
+                        beatae aut, illum eligendi eos assumenda neque nesciunt iste. Voluptatem, vero optio debitis aut
+                        exercitationem facilis dolorem.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- accordion item -->
+              <div class="accordion-item-container py-2 px-0 px-sm-2 px-md-3 px-lg-5  mb-4">
+                <div class="accordion-item">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sec6-nourish-acord-2" aria-expanded="false" aria-controls="sec6-nourish-acord-2">
+                    <h3 class="accordion-header" id="nourish-acord-heading2">
+                      Grass Fed Liver (600mg)
+                    </h3>
+                  </button>
+                  <div id="sec6-nourish-acord-2" class="accordion-collapse collapse"
+                    aria-labelledby="nourish-acord-heading2" data-bs-parent="#sec6-nourish-accordion">
+                    <div class="accordion-body py-2">
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum quo perferendis inventore,
+                        ad quas aspernatur natus mollitia accusamus quod eius nostrum aut aperiam, in asperiores. Libero
+                        corporis eos dolorem.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- tab item -->
+          <div class="tab-pane fade" id="pills-benefits" role="tabpanel" aria-labelledby="pills-benefits-tab">
+            <div class="accordion accordion-flush py-5 px-lg-5" id="sec6-benefits-accordion">
+              <!-- accordion -->
+              <div class="accordion-item-container py-2 px-0 px-sm-2 px-md-3 px-lg-5  mb-4">
+                <div class="accordion-item">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sec6-benefits-acord-1" aria-expanded="true" aria-controls="sec6-benefits-acord-1">
+                    <h3 class="accordion-header" id="benefits-acord-heading1">
+                      Suggested Use
+                    </h3>
+                  </button>
+                  <div id="sec6-benefits-acord-1" class="accordion-collapse collapse show"
+                    aria-labelledby="benefits-acord-heading1" data-bs-parent="#sec6-benefits-accordion">
+                    <div class="accordion-body py-2">
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Natus iure nesciunt, quidem officiis
+                        totam in praesentium dicta omnis, magni optio numquam ut quis magnam maiores aut, officia quo
+                        harum neque!.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- accordion -->
+              <div class="accordion-item-container py-2 px-0 px-sm-2 px-md-3 px-lg-5  mb-4">
+                <div class="accordion-item">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sec6-benefits-acord-2" aria-expanded="false" aria-controls="sec6-benefits-acord-2">
+                    <h3 class="accordion-header" id="benefits-acord-heading2">
+                      Potential Issues (Detox Reaction)
+                    </h3>
+                  </button>
+                  <div id="sec6-benefits-acord-2" class="accordion-collapse collapse"
+                    aria-labelledby="benefits-acord-heading2" data-bs-parent="#sec6-benefits-accordion">
+                    <div class="accordion-body py-2">
+                      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Explicabo pariatur earum cum non!
+                        Doloribus et, excepturi pariatur optio, repellat natus tempora quos maxime aperiam itaque
+                        distinctio odio totam officia explicabo!.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- teb item -->
+          <div class="tab-pane fade" id="pills-nutrition" role="tabpanel" aria-labelledby="pills-nutrition-tab">
+            <div class="accordion accordion-flush py-5 px-lg-5" id="sec6-nutrition-accordion">
+              <!-- accordion item -->
+              <div class="accordion-item-container py-2 px-0 px-sm-2 px-md-3 px-lg-5 mb-4">
+                <div class="accordion-item">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sec6-nutrition-acord-1" aria-expanded="true"
+                    aria-controls="sec6-nutrition-acord-1">
+                    <h3 class="accordion-header" id="nutrition-acord-heading1">
+                      Benefits of Eating Beef Supplements (Liver, Heart, Kidney, Pancreas & Spleen)
+                    </h3>
+                  </button>
+                  <div id="sec6-nutrition-acord-1" class="accordion-collapse collapse show"
+                    aria-labelledby="nutrition-acord-heading1" data-bs-parent="#sec6-nutrition-accordion">
+                    <div class="accordion-body py-2">
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti alias itaque iusto possimus
+                        beatae aut, illum eligendi eos assumenda neque nesciunt iste. Voluptatem, vero optio debitis aut
+                        exercitationem facilis dolorem.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- accordion item -->
+              <div class="accordion-item-container py-2 px-0 px-sm-2 px-md-3 px-lg-5  mb-4">
+                <div class="accordion-item">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sec6-nutrition-acord-2" aria-expanded="false"
+                    aria-controls="sec6-nutrition-acord-2">
+                    <h3 class="accordion-header" id="nutrition-acord-heading2">
+                      Grass Fed Liver (600mg)
+                    </h3>
+                  </button>
+                  <div id="sec6-nutrition-acord-2" class="accordion-collapse collapse"
+                    aria-labelledby="nutrition-acord-heading2" data-bs-parent="#sec6-nutrition-accordion">
+                    <div class="accordion-body py-2">
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum quo perferendis inventore,
+                        ad quas aspernatur natus mollitia accusamus quod eius nostrum aut aperiam, in asperiores. Libero
+                        corporis eos dolorem.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- tab item -->
+          <div class="tab-pane fade" id="pills-deepdrive" role="tabpanel" aria-labelledby="pills-deepdrive-tab">
+            <div class="accordion accordion-flush py-5 px-lg-5" id="sec6-deepdrive-accordion">
+              <!-- accordion item -->
+              <div class="accordion-item-container py-2 px-0 px-sm-2 px-md-3 px-lg-5 mb-4">
+                <div class="accordion-item">
+                  <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sec6-deepdrive-acord-1" aria-expanded="true"
+                    aria-controls="sec6-deepdrive-acord-1">
+                    <h3 class="accordion-header" id="deepdrive-acord-heading1">
+                      Benefits of Eating Beef Supplements (Liver, Heart, Kidney, Pancreas & Spleen)
+                    </h3>
+                  </button>
+                  <div id="sec6-deepdrive-acord-1" class="accordion-collapse collapse show"
+                    aria-labelledby="deepdrive-acord-heading1" data-bs-parent="#sec6-deepdrive-accordion">
+                    <div class="accordion-body py-2">
+                      <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Corrupti alias itaque iusto possimus
+                        beatae aut, illum eligendi eos assumenda neque nesciunt iste. Voluptatem, vero optio debitis aut
+                        exercitationem facilis dolorem.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- accordion item -->
+              <div class="accordion-item-container py-2 px-0 px-sm-2 px-md-3 px-lg-5  mb-4">
+                <div class="accordion-item">
+                  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#sec6-deepdrive-acord-2" aria-expanded="false"
+                    aria-controls="sec6-deepdrive-acord-2">
+                    <h3 class="accordion-header" id="deepdrive-acord-heading2">
+                      Grass Fed Liver (600mg)
+                    </h3>
+                  </button>
+                  <div id="sec6-deepdrive-acord-2" class="accordion-collapse collapse"
+                    aria-labelledby="deepdrive-acord-heading2" data-bs-parent="#sec6-deepdrive-accordion">
+                    <div class="accordion-body py-2">
+                      <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit ipsum quo perferendis inventore,
+                        ad quas aspernatur natus mollitia accusamus quod eius nostrum aut aperiam, in asperiores. Libero
+                        corporis eos dolorem.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="reference-section container-fluid py-5">
+    <div class="container-lg px-0 px-sm-1 px-md-3 px-lg-5">
+      <div class="accordion accordion-flush" id="reference-accordion">
+        <div class="accordion-item">
+          <button class="accordion-button px-4 py-4" type="button" data-bs-toggle="collapse"
+            data-bs-target="#reference-accordion-item" aria-expanded="true" aria-controls="reference-accordion-item">
+            <h3 class="accordion-header" id="reference-acord-heading">
+              Sources & References
+            </h3>
+          </button>
+          <div id="reference-accordion-item" class="accordion-collapse collapse show py-5"
+            aria-labelledby="reference-acord-heading" data-bs-parent="#reference-accordion">
+            <div class="accordion-body py-2">
+              <ol class="m-0">
+                <li>
+                  <a href="https://www.healthwebsite.com">www.healthwebsite.com</a>
+                </li>
+                <li>
+                  <a href="https://www.fitness.com">www.fitness.com</a>
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
