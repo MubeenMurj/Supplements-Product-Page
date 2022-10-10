@@ -12,6 +12,10 @@ The font used is CeraPro.
 
 <img src=".\images\ss\desktop-ss.png" style="zoom: 25%;" />
 
-### Mobile (All sections collapsed & all sections expanded)
+### Mobile Screenshots
 
-![](.\images\ss\mobile-ss.png) ![](.\images\ss\mobile-ss-expanded.png)
+All sections collapsed<br>
+![mobile ss](/images/ss/mobile-ss.png)
+
+All sections expanded<br>
+![mobile ss expanded](/images/ss/mobile-ss-expanded.png)
